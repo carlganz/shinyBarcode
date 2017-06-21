@@ -1,0 +1,37 @@
+---
+output: html_document
+params:
+  logo: 
+    value: !r system.file(package = "CannaBarcode", "CannaData_Logo_WhiteBG.svg")
+  transactionId: 
+    value: 8674309
+  cart: 
+    value: !r data.frame(item = "Banana OG",quantity = "3.5 grams",price = "$60")
+  name: 
+    value: "Carl Ganz"
+---
+
+```{R, echo = FALSE, results = 'asis'}
+cat(as.character(CannaBarcode::includeJsBarcode()))
+```
+
+<center>
+
+```{R, echo = FALSE, results = 'asis'}
+cat(as.character(shiny::tags$img(src = params$logo)))
+```
+
+
+**Patient:** `r params$name` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Date:** `r Sys.Date()`
+
+
+```{R, echo = FALSE}
+pander::pander(params$cart)
+```
+
+<svg id = "barcode"></svg>
+</center>
+
+```{R, echo = FALSE, results = 'asis'}
+cat(as.character(shiny::tags$script(CannaBarcode::barcode(params$transactionId))))
+```
