@@ -4,7 +4,10 @@
 \alias{includeJsBarcode}
 \title{Include JsBarcode JS Script}
 \usage{
-includeJsBarcode()
+includeJsBarcode(cdn = FALSE)
+}
+\arguments{
+\item{cdn}{Indicate whether to get JsBarcode from CDN or server}
 }
 \description{
 Include JsBarcode JS Script

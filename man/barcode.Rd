@@ -4,11 +4,16 @@
 \alias{barcode}
 \title{Generate JsBarcode}
 \usage{
-barcode(code)
+barcode(id, code)
 }
 \arguments{
+\item{id}{ID for SVG html element}
+
 \item{code}{Value to convert to barcode}
 }
 \description{
 Generate JsBarcode
+}
+\note{
+This is used mainly in \code{render_receipt}
 }
