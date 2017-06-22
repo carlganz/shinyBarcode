@@ -29,9 +29,11 @@ cat(as.character(shiny::tags$img(src = params$logo)))
 pander::pander(params$cart)
 ```
 
-<svg id = "barcode"></svg>
+```{R, echo = FALSE, results = 'asis'}
+cat(as.character(CannaBarcode::barcodeOutput("barcode")))
+```
 </center>
 
 ```{R, echo = FALSE, results = 'asis'}
-cat(as.character(shiny::tags$script(CannaBarcode::barcode(params$transactionId))))
+cat(as.character(shiny::tags$script(CannaBarcode::barcode("barcode",params$transactionId))))
 ```
