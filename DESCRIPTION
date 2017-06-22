@@ -8,7 +8,7 @@ Authors@R: c(
   )
 Description: Wraps the 'JsBarcode' library for easy rendering of HTML barcodes.
 Depends: R (>= 3.3.3)
-Imports: shiny, rmarkdown
+Imports: shiny, rmarkdown, jsonlite
 Suggests: pander
 License: MIT + file LICENSE
 Encoding: UTF-8
