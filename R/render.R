@@ -27,10 +27,12 @@ render_receipt <-
 
 #' Generate JsBarcode
 #' 
+#' @param id ID for SVG html element
 #' @param code Value to convert to barcode
+#' @note This is used mainly in \code{render_receipt}
 #' @export
 #' 
 
-barcode <- function(code) {
-  paste0('JsBarcode("#barcode", ', code,');')
+barcode <- function(id, code) {
+  paste0('JsBarcode("#',id,'", ', code,');')
 }
