@@ -14,10 +14,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{R, echo = FALSE, results = 'asis'}
-cat(as.character(CannaBarcode::includeJsBarcode()))
-```
-
 # CannaBarcode
 
 The goal of CannaBarcode is to wrap the [JsBarcode](https://github.com/lindell/JsBarcode) library, written by Johan Lindell, for R. This enables rendering of barcodes in R Markdown and Shiny. This enables generating receipts in markdown, which can compiled to HTML with `rmarkdown`, and then printed using Google Cloud Print using [`googlePrintr`](https://github.com/CannaData/googlePrintr).
@@ -32,20 +28,6 @@ devtools::install_github("CannaData/CannaBarcode")
 ```
 
 ## Example
-
-### R Markdown
-
-This is an example of how to render in R Markdown:
-
-```{R, echo = FALSE, results = 'asis'}
-cat(as.character(CannaBarcode::barcodeOutput("barcode")))
-```
-
-```{R, echo = FALSE, results = 'asis'}
-cat(as.character(shiny::tags$script(CannaBarcode::barcode("barcode", 8675309))))
-```
-
-Look at the [raw README.rmd](https://raw.githubusercontent.com/CannaData/CannaBarcode/master/README.rmd) to see the code.
 
 ### Shiny
 
