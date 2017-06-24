@@ -7,4 +7,4 @@ $.extend(barcodeOutputBinding, {
     $(el).JsBarcode(data.barcode, data.options);
   }
 });
-Shiny.outputBindings.register(barcodeOutputBinding, "Canna.barcodeOutputBinding");
+Shiny.outputBindings.register(barcodeOutputBinding, "Shiny.barcodeOutputBinding");

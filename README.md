@@ -2,10 +2,10 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 [![Travis-CI Build Status](https://travis-ci.org/CannaData/CannaBarcode.svg?branch=master)](https://travis-ci.org/CannaData/CannaBarcode)
 
-CannaBarcode
+shinyBarcode
 ============
 
-The goal of CannaBarcode is to wrap the [JsBarcode](https://github.com/lindell/JsBarcode) library, written by Johan Lindell, for R. This enables rendering of barcodes in R Markdown and Shiny. This enables generating receipts in markdown, which can compiled to HTML with `rmarkdown`, and then printed using Google Cloud Print using [`googlePrintr`](https://github.com/CannaData/googlePrintr).
+The goal of `shinyBarcode` is to wrap the [JsBarcode](https://github.com/lindell/JsBarcode) library, written by Johan Lindell, for R. This enables rendering of barcodes in R Markdown and Shiny. This enables generating receipts in markdown, which can compiled to HTML with `rmarkdown`, and then printed using Google Cloud Print using [`googlePrintr`](https://github.com/CannaData/googlePrintr).
 
 Installation
 ------------
@@ -14,7 +14,7 @@ You can install CannaBarcode from github with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("CannaData/CannaBarcode")
+devtools::install_github("CannaData/shinyBarcode")
 ```
 
 Example

@@ -1,12 +1,12 @@
-Package: CannaBarcode
-Title: What the Package Does (one line, title case)
+Package: ShinyBarcode
+Title: Wrapper for the 'JsBarcode' Library
 Version: 0.0.0.9000
 Authors@R: c(
   person("Carl", "Ganz", email = "carl@cannadatasolutions", role = c("aut", "cre")),
   person("CannaData Solutions", role = "cph"),
   person("Johan", "Lindell", email = "johan@lindell.me", role = c("ctb", "cph"), comment = "JsBarcode in javascript/JsBarcode")
   )
-Description: Wraps the 'JsBarcode' library for easy rendering of HTML barcodes.
+Description: Wraps the 'JsBarcode' library for easy rendering of barcodes in 'Shiny' and 'R Markdown'.
 Depends: R (>= 3.3.3)
 Imports: shiny, rmarkdown, jsonlite
 Suggests: pander
