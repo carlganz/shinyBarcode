@@ -4,7 +4,7 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-[![Travis-CI Build Status](https://travis-ci.org/CannaData/CannaBarcode.svg?branch=master)](https://travis-ci.org/CannaData/CannaBarcode)[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/CannaData/CannaBarcode?branch=master&svg=true)](https://ci.appveyor.com/project/CannaData/CannaBarcode)
+[![Travis-CI Build Status](https://travis-ci.org/CannaData/shinyBarcode.svg?branch=master)](https://travis-ci.org/CannaData/shinyBarcode)[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/CannaData/shinyBarcode?branch=master&svg=true)](https://ci.appveyor.com/project/CannaData/shinyBarcode)
 
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
