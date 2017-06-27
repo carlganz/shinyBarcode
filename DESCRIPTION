@@ -1,4 +1,4 @@
-Package: ShinyBarcode
+Package: shinyBarcode
 Title: Wrapper for the 'JsBarcode' Library
 Version: 0.0.0.9000
 Authors@R: c(
