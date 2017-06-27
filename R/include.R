@@ -10,7 +10,7 @@ includeJsBarcode <- function(cdn = FALSE) {
         "https://cdn.jsdelivr.net/jsbarcode/3.5.8/JsBarcode.all.min.js"
       ),
       shiny::includeScript(
-        system.file(package = "shinyBarcode", "javascript",  "CannaBarcode.js")
+        system.file(package = "shinyBarcode", "javascript",  "shinyBarcode.js")
       )
     ))
   } else {
