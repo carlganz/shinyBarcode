@@ -10,7 +10,7 @@ The goal of `shinyBarcode` is to wrap the [JsBarcode](https://github.com/lindell
 Installation
 ------------
 
-You can install CannaBarcode from github with:
+You can install shinyBarcode from github with:
 
 ``` r
 # install.packages("devtools")
@@ -24,17 +24,17 @@ Example
 
 ``` r
 library(shiny)
-library(CannaBarcode)
+library(shinyBarcode)
 
 ui <- fluidPage(
   # must include javascript dependencies
-  CannaBarcode::includeJsBarcode(cdn = TRUE),
+  shinyBarcode::includeJsBarcode(cdn = TRUE),
   numericInput("value", "Input a positive integer", 8675309, 0, 1000000),
-  CannaBarcode::barcodeOutput("barcode")
+  shinyBarcode::barcodeOutput("barcode")
 )
 
 server <- function(input, output, session) {
-  output$barcode <- CannaBarcode::renderBarcode(
+  output$barcode <- shinyBarcode::renderBarcode(
     input$value
   )
 }
